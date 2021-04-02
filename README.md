@@ -34,15 +34,15 @@ Ensure your build files match the following requirements:
 1. (React Native 0.59 and lower) Define the *`@brooons/react-native-bluetooth-escpos-printer`* project in *`android/settings.gradle`*:
 
 ```
-include ':@brooons/react-native-bluetooth-escpos-printer'
-project(':@brooons/react-native-bluetooth-escpos-printer').projectDir = new File(rootProject.projectDir, '../node_modules/@brooons/react-native-bluetooth-escpos-printer/android')
+include ':react-native-bluetooth-escpos-printer'
+project(':react-native-bluetooth-escpos-printer').projectDir = new File(rootProject.projectDir, '../node_modules/@brooons/react-native-bluetooth-escpos-printer/android')
 ```
 2. (React Native 0.59 and lower) Add the *`@brooons/react-native-bluetooth-escpos-printer`* as an dependency of your app in *`android/app/build.gradle`*:
 ```
 ...
 dependencies {
   ...
-  implementation project(':@brooons/react-native-bluetooth-escpos-printer')
+  implementation project(':react-native-bluetooth-escpos-printer')
 }
 ```
 

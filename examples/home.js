@@ -16,7 +16,7 @@ import {ActivityIndicator,
     TouchableOpacity,
     Dimensions,
     ToastAndroid} from 'react-native';
-import {BluetoothEscposPrinter, BluetoothManager, BluetoothTscPrinter} from "react-native-bluetooth-escpos-printer";
+import {BluetoothEscposPrinter, BluetoothManager, BluetoothTscPrinter} from "@brooons/react-native-bluetooth-escpos-printer";
 import EscPos from "./escpos";
 import Tsc from "./tsc";
 
