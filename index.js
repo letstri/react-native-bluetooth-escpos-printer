@@ -114,6 +114,11 @@ BluetoothTscPrinter.READABLE={
   EANBLE:1
 };
 
+BluetoothEscposPrinter.DEVICE_WIDTH = {
+    WIDTH_58: 384,
+    WIDTH_80: 576,
+};
+
 BluetoothEscposPrinter.ERROR_CORRECTION = {
     L:1,
     M:0,
@@ -121,7 +126,7 @@ BluetoothEscposPrinter.ERROR_CORRECTION = {
     H:2
 };
 
-BluetoothEscposPrinter.BARCODETYPE={
+BluetoothEscposPrinter.BARCODETYPE = {
     UPC_A:65,//11<=n<=12
     UPC_E:66,//11<=n<=12
     JAN13:67,//12<=n<=12
