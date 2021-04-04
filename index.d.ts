@@ -58,16 +58,16 @@ declare module '@brooons/react-native-bluetooth-escpos-printer' {
     /**
      * Set the printer left spaces.
      */
-    function printerLeftSpace(sp: number): Promise<void>;
+    function printerLeftSpace(space: number): Promise<void>;
 
     /**
      * Set the spaces between lines.
      */
-    function printerLineSpace(sp: number): Promise<void>;
+    function printerLineSpace(space: number): Promise<void>;
     /**
      * Set the spaces between lines.
      */
-    function printerLineSpace(sp: number): Promise<void>;
+    function printerLineSpace(space: number): Promise<void>;
 
     /**
      * Set the underline of the text
@@ -135,7 +135,7 @@ declare module '@brooons/react-native-bluetooth-escpos-printer' {
     const EVENT_DEVICE_ALREADY_PAIRED = 1;
     const EVENT_DEVICE_FOUND = 2;
 
-    function isBluetoothEnabled(): Promise<boolean>;
+    function checkBluetoothEnabled(): Promise<boolean>;
 
     function enableBluetooth(): Promise<string[] | null>;
 

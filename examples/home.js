@@ -40,7 +40,7 @@ export default class Home extends Component {
     }
 
     componentDidMount() {//alert(BluetoothManager)
-        BluetoothManager.isBluetoothEnabled().then((enabled)=> {
+        BluetoothManager.checkBluetoothEnabled().then((enabled)=> {
             this.setState({
                 bleOpend: Boolean(enabled),
                 loading: false

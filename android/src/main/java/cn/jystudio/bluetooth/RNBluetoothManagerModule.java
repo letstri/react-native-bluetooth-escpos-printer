@@ -163,7 +163,7 @@ public class RNBluetoothManagerModule extends ReactContextBaseJavaModule
     }
 
     @ReactMethod
-    public void isBluetoothEnabled(final Promise promise) {
+    public void checkBluetoothEnabled(final Promise promise) {
         BluetoothAdapter adapter = this.getBluetoothAdapter();
         promise.resolve(adapter!=null && adapter.isEnabled());
     }
@@ -241,7 +241,7 @@ public class RNBluetoothManagerModule extends ReactContextBaseJavaModule
 	}
 
     @ReactMethod
-    public void unpaire(String address,final Promise promise){
+    public void unpair(String address,final Promise promise){
         BluetoothAdapter adapter = this.getBluetoothAdapter();
         if (adapter!=null && adapter.isEnabled()) {
             BluetoothDevice device = adapter.getRemoteDevice(address);
