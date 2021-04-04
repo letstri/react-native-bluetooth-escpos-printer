@@ -2,7 +2,7 @@
 
 > Cloned and changed from https://github.com/januslo/react-native-bluetooth-escpos-printer
 
-[![npm version](https://badge.fury.io/js/@brooons/react-native-bluetooth-escpos-printer.svg)](https://www.npmjs.com/package/@brooons/react-native-bluetooth-escpos-printer)
+[![npm version](https://badge.fury.io/js/%40brooons%2Freact-native-bluetooth-escpos-printer.svg)](https://www.npmjs.com/package/@brooons/react-native-bluetooth-escpos-printer)
 
 React-Native plugin for the bluetooth ESC/POS & TSC printers.
 
