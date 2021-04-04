@@ -1,6 +1,7 @@
 
 import { NativeModules } from 'react-native';
- const {BluetoothManager,BluetoothEscposPrinter, BluetoothTscPrinter }= NativeModules;
+
+const { BluetoothManager, BluetoothEscposPrinter, BluetoothTscPrinter } = NativeModules;
 
 BluetoothTscPrinter.DIRECTION = {
     FORWARD: 0,
@@ -25,6 +26,7 @@ BluetoothTscPrinter.DENSITY = {
     DNESITY14: 14,
     DNESITY15: 15
 };
+
 BluetoothTscPrinter.BARCODETYPE = {
     CODE128: "128",
     CODE128M: "128M",
@@ -109,9 +111,9 @@ BluetoothTscPrinter.TEAR = {
 	ON:'ON',
 	OFF:'OFF'
 };
-BluetoothTscPrinter.READABLE={
-  DISABLE:0,
-  EANBLE:1
+BluetoothTscPrinter.READABLE = {
+  DISABLE: 0,
+  ENABLE: 1,
 };
 
 BluetoothEscposPrinter.DEVICE_WIDTH = {
@@ -120,32 +122,33 @@ BluetoothEscposPrinter.DEVICE_WIDTH = {
 };
 
 BluetoothEscposPrinter.ERROR_CORRECTION = {
-    L:1,
-    M:0,
-    Q:3,
-    H:2
+    L: 1,
+    M: 0,
+    Q: 3,
+    H: 2,
 };
 
 BluetoothEscposPrinter.BARCODETYPE = {
-    UPC_A:65,//11<=n<=12
-    UPC_E:66,//11<=n<=12
-    JAN13:67,//12<=n<=12
-    JAN8:68,//7<=n<=8
-    CODE39:69,//1<=n<=255
-    ITF:70,//1<=n<=255(even numbers)
-    CODABAR:71,//1<=n<=255
-    CODE93:72,//1<=n<=255
-    CODE128:73//2<=n<=255
-};
-BluetoothEscposPrinter.ROTATION={
-    OFF:0,
-    ON:1
-};
-BluetoothEscposPrinter.ALIGN={
-    LEFT:0,
-    CENTER:1,
-    RIGHT:2
+    UPC_A: 65, // 11<=n<=12
+    UPC_E: 66, // 11<=n<=12
+    JAN13: 67, // 12<=n<=12
+    JAN8: 68, // 7<=n<=8
+    CODE39: 69, // 1<=n<=255
+    ITF: 70, // 1<=n<=255(even numbers)
+    CODABAR: 71, // 1<=n<=255
+    CODE93: 72, // 1<=n<=255
+    CODE128: 73, // 2<=n<=255
 };
 
- module.exports ={
-    BluetoothManager,BluetoothEscposPrinter, BluetoothTscPrinter };
+BluetoothEscposPrinter.ROTATION = {
+    OFF: 0,
+    ON: 1,
+};
+
+BluetoothEscposPrinter.ALIGN = {
+    LEFT: 0,
+    CENTER: 1,
+    RIGHT: 2,
+};
+
+module.exports = { BluetoothManager,BluetoothEscposPrinter, BluetoothTscPrinter };
