@@ -75,7 +75,7 @@ import { BluetoothManager, BluetoothEscposPrinter, BluetoothTscPrinter } from '@
 
 BluetoothManager is the module for Bluetooth service management, supports Bluetooth status check, enable/disable Bluetooth service, scan devices, connect/unpair devices.
 
-#### checkBluetoothEnabled()
+#### checkBluetoothEnabled(): Promise<void>
 
 Async function, checks whether Bluetooth service is enabled.
 
