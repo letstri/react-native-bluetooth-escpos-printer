@@ -164,6 +164,13 @@ async function, disconnects the specified device.
 await BluetoothManager.disconnect(address);
 ```
 
+#### getConnectedDeviceAddress(): Promise<void>
+async function, Return the address of the currently connected device .
+
+```javascript
+await BluetoothManager.getConnectedDeviceAddress();
+```
+
 #### unpair(address: string): Promise<void>
 async function, disconnects and unpairs the specified devices
 

@@ -141,6 +141,11 @@ declare module '@brooons/react-native-bluetooth-escpos-printer' {
 
     function disableBluetooth(): Promise<void>;
 
+    /**
+     * Return the address of the currently connected device
+     */
+    function getConnectedDeviceAddress(): Promise<void>;
+
     // TODO: change string to object
     function scanDevices(): Promise<string>; // '{found:[],paired:[]}'
 
