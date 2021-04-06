@@ -157,6 +157,13 @@ async function, connects the specified device, if not bound, bound dailog prompt
 await BluetoothManager.connect(address);
 ```
 
+#### disconnect(address: string): Promise<void>
+async function, disconnects the specified device.
+
+```javascript
+await BluetoothManager.disconnect(address);
+```
+
 #### unpair(address: string): Promise<void>
 async function, disconnects and unpairs the specified devices
 

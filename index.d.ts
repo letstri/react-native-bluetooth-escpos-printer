@@ -145,6 +145,8 @@ declare module '@brooons/react-native-bluetooth-escpos-printer' {
     function scanDevices(): Promise<string>; // '{found:[],paired:[]}'
 
     function connect(address: string): Promise<void>;
+
+    function disconnect(address: string): Promise<void>;
   }
 
   namespace BluetoothTscPrinter {
